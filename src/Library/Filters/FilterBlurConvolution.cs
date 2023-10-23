@@ -18,7 +18,7 @@ namespace CompAndDel.Filters
         /// Inicializa una nueva instancia de <c>FilterBlurConvolution</c> asignando el kernel, complemento, y divisor
         /// según https://wikimedia.org/api/rest_v1/media/math/render/svg/91256bfeece3344f8602e288d445e6422c8b8a1c.
         /// </summary>
-        public FilterBlurConvolution()
+        public FilterBlurConvolution(IPicture picture)
         {
             this.kernel = new int[3, 3];
             this.complement = 0;
